@@ -8,10 +8,10 @@ class Solution:
         ops = 0
         dic = {}
         for i in nums:
-            if k - i in dic.keys() and dic[k-i] > 0:
+            if k - i in dic and dic[k-i] > 0:
                 dic[k-i] -= 1
                 ops += 1
-            elif i in dic.keys():
+            elif i in dic:
                 dic[i] += 1
             else:
                 dic[i] = 1
