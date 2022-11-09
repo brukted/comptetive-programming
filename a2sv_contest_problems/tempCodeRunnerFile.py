@@ -1,0 +1,1 @@
+int, str(i))) +  sum(map(int, str(105 -i)), range(105)))))
