@@ -1,4 +1,4 @@
 # Optimal solution
-# blah
-#blah
+# def solve(arr):
+#   return 0, 1
 # blah
