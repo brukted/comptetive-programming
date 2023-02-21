@@ -1,3 +1,5 @@
+from math import inf
+
 class Node:
     def __init__(self, val, left=None, right=None):
         self.left = left
@@ -8,8 +10,8 @@ class Node:
 class AllOne:
     def __init__(self):
         self.head, self.tail = Node("h"), Node("t")
-        self.head.count = float("inf")
-        self.tail.count = float("-inf")
+        self.head.count = inf
+        self.tail.count = -inf
         self.tail.left = self.head
         self.head.right = self.tail
         self.words = {}
