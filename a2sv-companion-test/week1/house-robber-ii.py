@@ -1,7 +1,7 @@
 class Solution:
     def rob(self, nums: List[int]) -> int:
         
-        @cache
+        @lru_cache(len(nums) * 2)
         def robRec(house, firstRobbed):
             if house >= len(nums):
                 return 0
